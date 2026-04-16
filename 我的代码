@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main() {
+	char* a[80];
+	int k = 0;
+
+	while (scanf("%s", a[k]) != EOF)
+		k++;
+	for (int i = k; i >= 0; i--)
+	{
+		printf("%s ", a[i]);
+		if (i > 0) printf(" ");
+	}
+}
